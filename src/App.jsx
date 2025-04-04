@@ -6,11 +6,19 @@ import ContactUs from "./pages/ContactUs";
 import Gallery from "./pages/Gallery";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectDetail from "./pages/ProjectDetail";
+import ReachUsModal from "./components/ReachUsModal";
+import { useState } from "react";
+
 
 function App() {
+  const [showReachUsModal, setShowReachUsModal] = useState(false);
   return (
     <>
-      <Navbar />
+      <Navbar onReachUsClick={() => setShowReachUsModal(true)} />
+      {showReachUsModal && (
+        <ReachUsModal onClose={() => setShowReachUsModal(false)} />
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties />} />

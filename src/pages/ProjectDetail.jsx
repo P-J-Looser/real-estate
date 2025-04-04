@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProjects } from "../data/projects"; // create this or import from wherever
+import { allProjects } from '../assets/frontend_assets/data/projects'; // create this or import from wherever
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -11,7 +11,7 @@ const ProjectDetail = () => {
   if (!project) return <div>Project not found</div>;
 
   return (
-    <section className="py-10 px-4 max-w-6xl mx-auto">
+    <section className="py-28 px-4 max-w-6xl mx-auto">
       <img src={project.image} alt={project.title} className="w-full h-80 object-cover rounded-lg mb-6" />
 
       {/* Overview + Map */}

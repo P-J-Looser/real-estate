@@ -7,8 +7,12 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12 px-6 md:px-12">
       {/* Subscribe Section */}
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Subscribe to Get Latest Info</h2>
-        <p className="text-gray-400 mb-6">Stay updated with the latest property listings and offers.</p>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Subscribe to Get Latest Info
+        </h2>
+        <p className="text-gray-400 mb-6">
+          Stay updated with the latest property listings and offers.
+        </p>
         <form className="grid md:grid-cols-2 gap-4">
           <input
             type="text"
@@ -44,7 +48,8 @@ const Footer = () => {
         <div>
           <img src={logo} alt="Company Logo" className="w-16 mb-4" />
           <p className="text-gray-400">
-            We provide the best real estate services. Find your dream home with us!
+            We provide the best real estate services. Find your dream home with
+            us!
           </p>
         </div>
 
@@ -52,18 +57,44 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><Link to="/properties" className="hover:text-blue-400">Properties</Link></li>
-            <li><Link to="/about" className="hover:text-blue-400">About Us</Link></li>
-            <li><Link to="/gallery" className="hover:text-blue-400">Gallery</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-400">Contact Us</Link></li>
+            <li>
+              <Link to="/properties" className="hover:text-blue-400">
+                Properties
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-blue-400">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="hover:text-blue-400">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-blue-400">
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 
         {/* Right - Get in Touch */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-          <p className="text-gray-400">Phone: <span className="text-white">+123 456 7890</span></p>
-          <p className="text-gray-400">Email: <span className="text-white">info@example.com</span></p>
+          <p className="text-gray-400">
+            Phone: <span className="text-white">+123 456 7890</span>
+          </p>
+          <p className="text-gray-400">
+            Email: <span className="text-white">info@example.com</span>
+          </p>
+          <div className="text-sm text-gray-600 mt-4">
+            <p>Admin?</p>
+            <a href="/login" className="text-blue-600 hover:underline">
+              Login here
+            </a>
+          </div>
         </div>
       </div>
     </footer>

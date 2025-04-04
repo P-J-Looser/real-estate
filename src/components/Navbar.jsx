@@ -5,7 +5,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { motion } from "framer-motion";
 import logo from "../assets/frontend_assets/logo.jpg"; 
 
-const Navbar = () => {
+const Navbar = ({ onReachUsClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -52,12 +52,12 @@ const Navbar = () => {
           </ul>
 
           {/* Right - Contact Button (Hidden on Small Screens) */}
-          <Link
-            to="/contact"
-            className="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-          >
-            Reach Us
-          </Link>
+          <button
+          onClick={onReachUsClick}
+          className="hidden md:block cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+        >
+          Reach Us
+        </button>
 
           {/* Mobile Menu Icon */}
           <button
