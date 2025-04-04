@@ -4,7 +4,7 @@ import aboutImage from "../assets/frontend_assets/abouthero.jpeg"; // Replace wi
 
 const AboutHero = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="pb-12 pt-28 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
         
         {/* Left Side - Text and Counters */}
