@@ -18,7 +18,7 @@ const Navbar = ({ onReachUsClick }) => {
       >
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           {/* Left - Logo */}
-          <Link to="/" className="text-2xl font-bold">
+          <Link to="/real-estate" className="text-2xl font-bold">
             <img src={logo} alt="Logo" className="h-10" />
           </Link>
 
