@@ -20,7 +20,7 @@ function App() {
         <ReachUsModal onClose={() => setShowReachUsModal(false)} />
       )}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/real-estate" element={<Home />} />
         <Route path="/properties" element={<Properties />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
